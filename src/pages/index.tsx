@@ -1,9 +1,15 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { motion } from "framer-motion"
+import { FaTwitter, FaGithub } from 'react-icons/fa'
+import { SiZenn } from 'react-icons/si'
 
-const inter = Inter({ subsets: ['latin'] })
+import { Archivo_Black } from 'next/font/google'
+
+const archivoBlack = Archivo_Black({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export default function Home() {
   return (
@@ -14,101 +20,138 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
+      <div className={styles.home}>
+        {/* Introduce */}
+        <div className={`section ${styles.main}`}>
           <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+            <motion.div {...headTextAnimation}>
+              <h1 className={`${archivoBlack.className} ${styles.name}`}>
+                Airi Narita
+              </h1>
+            </motion.div>
+            <motion.div {...headContentAnimation}>
+              <h2 className={styles.title}>
+                Nothing impossible!!!
+              </h2>
+              <p className={styles.description}>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum illum praesentium, corrupti tempora totam laudantium sit unde optio necessitatibus iusto repellendus quae magni nobis minima consectetur ab quam aliquid et!
+              </p>
+            </motion.div>
+            <motion.div {...headContentAnimation} className={styles.sns}>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.snsItem}
+              >
+                <FaTwitter size={'1.6rem'} />
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.snsItem}
+              ><FaGithub size={'1.6rem'}></FaGithub></motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.snsItem}
+              ><SiZenn size={'1.6rem'} /></motion.div>
+            </motion.div>
+          </div>
+          <motion.div {...headImageAnimation}>
+            <div className={styles.selfImage}>
+              <img src="https://images.unsplash.com/photo-1682832847143-4696ff5dc87a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="ㅅㄷㄴㅅ" />
+            </div>
+          </motion.div>
+        </div>
+        {/* Slider */}
+        <div className={`section ${styles.slider}`}>
+          <div className={styles.sliderInner}>
+            <div className={styles.sliderItem}>1</div>
+            <div className={styles.sliderItem}>2</div>
+            <div className={styles.sliderItem}>3</div>
+            <div className={styles.sliderItem}>4</div>
+            <div className={styles.sliderItem}>5</div>
+            <div className={styles.sliderItem}>6</div>
+            <div className={styles.sliderItem}>7</div>
+            <div className={styles.sliderItem}>8</div>
           </div>
         </div>
+        {/* Portfolio */}
+        <div className={`section ${styles.portfolio}`}>
+          <h2 className="sectionTitle">Portfolio</h2>
+          <div className={styles.portfolioInner}>
+            <div className={styles.portfolioCard}>
+              <img className={styles.portfolioImage} src="https://images.unsplash.com/photo-1625842268584-8f3296236761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
+              <div className={styles.portfolioContent}>
+                <h4 className={styles.portfolioTitle}>Together</h4>
+                <p className={styles.portfolioDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti illo earum reprehenderit voluptatem nulla quae voluptates, blanditiis cum? Quidem praesentium, dolores velit animi quod cumque dignissimos sed sapiente at eius.</p>
+              </div>
+            </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
+            <div className={styles.portfolioCard}>
+              <img className={styles.portfolioImage} src="https://images.unsplash.com/photo-1625842268584-8f3296236761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
+              <div className={styles.portfolioContent}>
+                <h4 className={styles.portfolioTitle}>Together</h4>
+                <p className={styles.portfolioDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti illo earum reprehenderit voluptatem nulla quae voluptates, blanditiis cum? Quidem praesentium, dolores velit animi quod cumque dignissimos sed sapiente at eius.</p>
+              </div>
+            </div>
+
+            <div className={styles.portfolioCard}>
+              <img className={styles.portfolioImage} src="https://images.unsplash.com/photo-1625842268584-8f3296236761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
+              <div className={styles.portfolioContent}>
+                <h4 className={styles.portfolioTitle}>Together</h4>
+                <p className={styles.portfolioDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti illo earum reprehenderit voluptatem nulla quae voluptates, blanditiis cum? Quidem praesentium, dolores velit animi quod cumque dignissimos sed sapiente at eius.</p>
+              </div>
+            </div>
+
+            <div className={styles.portfolioCard}>
+              <img className={styles.portfolioImage} src="https://images.unsplash.com/photo-1625842268584-8f3296236761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
+              <div className={styles.portfolioContent}>
+                <h4 className={styles.portfolioTitle}>Together</h4>
+                <p className={styles.portfolioDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti illo earum reprehenderit voluptatem nulla quae voluptates, blanditiis cum? Quidem praesentium, dolores velit animi quod cumque dignissimos sed sapiente at eius.</p>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+      </div>
     </>
   )
 }
+
+const headTextAnimation = {
+  initial: { x: 100, opacity: 0 },
+  animate: { x: 0, opacity: 1 },
+  transition: {
+    type: "spring",
+    damping: 5,
+    stiffness: 40,
+    restDelta: 0.001,
+    duration: 0.3,
+  },
+};
+
+const headContentAnimation = {
+  initial: { y: 100, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+  transition: {
+    type: "spring",
+    damping: 7,
+    stiffness: 30,
+    restDelta: 0.001,
+    duration: 0.6,
+    delay: 0.2,
+    delayChildren: 0.2,
+  },
+};
+
+const headImageAnimation = {
+  initial: { x: 100, opacity: 0 },
+  animate: { x: 0, opacity: 1 },
+  transition: {
+    type: "spring",
+    damping: 5,
+    stiffness: 40,
+    restDelta: 0.001,
+    duration: 0.3,
+  },
+};
