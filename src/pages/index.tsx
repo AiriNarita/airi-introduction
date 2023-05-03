@@ -43,18 +43,28 @@ export default function Home() {
                 whileTap={{ scale: 0.9 }}
                 className={styles.snsItem}
               >
-                <FaTwitter size={'1.6rem'} />
+                <a href="https://twitter.com/aaaairinkiyowo" target='_blank'>
+                  <FaTwitter size={'1.6rem'} />
+                </a>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className={styles.snsItem}
-              ><FaGithub size={'1.6rem'}></FaGithub></motion.div>
+              >
+                <a href="https://github.com/airinarita" target='_blank'>
+                  <FaGithub size={'1.6rem'}></FaGithub>
+                </a>
+              </motion.div>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className={styles.snsItem}
-              ><SiZenn size={'1.6rem'} /></motion.div>
+              >
+                <a href="https://zenn.dev/airiswim" target='_blank'>
+                  <SiZenn size={'1.6rem'} />
+                </a>
+              </motion.div>
             </motion.div>
           </div>
           <motion.div {...headImageAnimation}>

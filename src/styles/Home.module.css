@@ -44,6 +44,10 @@
   cursor: pointer;
 }
 
+.snsItem a {
+  color: #ffffff;
+}
+
 .selfImage {
   flex: 1;
 }
@@ -103,5 +107,4 @@
   margin: 0;
 }
 .portfolioDescription {
-
 }
