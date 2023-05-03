@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
-import { motion } from "framer-motion"
-import { FaTwitter, FaGithub } from 'react-icons/fa'
-import { SiZenn } from 'react-icons/si'
+import Head from "next/head";
+import styles from "@/styles/Home.module.css";
+import { motion } from "framer-motion";
+import { FaTwitter, FaGithub } from "react-icons/fa";
+import { SiZenn } from "react-icons/si";
 
-import { Archivo_Black } from 'next/font/google'
+import { Archivo_Black } from "next/font/google";
 
 const archivoBlack = Archivo_Black({
-  weight: '400',
-  subsets: ['latin'],
-})
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function Home() {
   return (
@@ -30,11 +30,12 @@ export default function Home() {
               </h1>
             </motion.div>
             <motion.div {...headContentAnimation}>
-              <h2 className={styles.title}>
-                Nothing impossible!!!
-              </h2>
+              <h2 className={styles.title}>~Nothing impossible!!!~</h2>
               <p className={styles.description}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum illum praesentium, corrupti tempora totam laudantium sit unde optio necessitatibus iusto repellendus quae magni nobis minima consectetur ab quam aliquid et!
+              学習の中で、今まで継続していることとして<br/>自分の知識定着や、周りの学習者のためにも学んだことを<br/>
+              毎日アウトプットを行なっています。<br/>
+              <strong>&quot;アウトプットこそ最大の学び &quot;</strong><br/>
+               ぜひ以下のリンクからご覧ください！
               </p>
             </motion.div>
             <motion.div {...headContentAnimation} className={styles.sns}>
@@ -43,8 +44,8 @@ export default function Home() {
                 whileTap={{ scale: 0.9 }}
                 className={styles.snsItem}
               >
-                <a href="https://twitter.com/aaaairinkiyowo" target='_blank'>
-                  <FaTwitter size={'1.6rem'} />
+                <a href="https://twitter.com/aaaairinkiyowo" target="_blank">
+                  <FaTwitter size={"1.6rem"} />
                 </a>
               </motion.div>
               <motion.div
@@ -52,8 +53,8 @@ export default function Home() {
                 whileTap={{ scale: 0.9 }}
                 className={styles.snsItem}
               >
-                <a href="https://github.com/airinarita" target='_blank'>
-                  <FaGithub size={'1.6rem'}></FaGithub>
+                <a href="https://github.com/airinarita" target="_blank">
+                  <FaGithub size={"1.6rem"}></FaGithub>
                 </a>
               </motion.div>
               <motion.div
@@ -61,29 +62,45 @@ export default function Home() {
                 whileTap={{ scale: 0.9 }}
                 className={styles.snsItem}
               >
-                <a href="https://zenn.dev/airiswim" target='_blank'>
-                  <SiZenn size={'1.6rem'} />
+                <a href="https://zenn.dev/airiswim" target="_blank">
+                  <SiZenn size={"1.6rem"} />
                 </a>
               </motion.div>
             </motion.div>
           </div>
           <motion.div {...headImageAnimation}>
             <div className={styles.selfImage}>
-              <img src="https://images.unsplash.com/photo-1682832847143-4696ff5dc87a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="ㅅㄷㄴㅅ" />
+              <img className={styles.selfImage} src="/airi.jpg" />
             </div>
           </motion.div>
         </div>
         {/* Slider */}
         <div className={`section ${styles.slider}`}>
           <div className={styles.sliderInner}>
-            <div className={styles.sliderItem}>1</div>
-            <div className={styles.sliderItem}>2</div>
-            <div className={styles.sliderItem}>3</div>
-            <div className={styles.sliderItem}>4</div>
-            <div className={styles.sliderItem}>5</div>
-            <div className={styles.sliderItem}>6</div>
-            <div className={styles.sliderItem}>7</div>
-            <div className={styles.sliderItem}>8</div>
+            <div className={styles.sliderItem}>
+              <img className={styles.sliderItem} src="/pc.png" />
+            </div>
+            <div className={styles.sliderItem}>
+              <img className={styles.sliderItem} src="/daigaku.jpg" />
+            </div>
+            <div className={styles.sliderItem}>
+              <img className={styles.sliderItem} src="/ww.jpg" />
+            </div>
+            <div className={styles.sliderItem}>
+              <img className={styles.sliderItem} src="/study.jpg" />
+            </div>
+            <div className={styles.sliderItem}>
+              <img className={styles.sliderItem} src="/aws.jpg" />
+            </div>
+            <div className={styles.sliderItem}>
+              <img className={styles.sliderItem} src="/fes.jpg" />
+            </div>
+            <div className={styles.sliderItem}>
+              <img className={styles.sliderItem} src="/dmm.png" />
+            </div>
+            <div className={styles.sliderItem}>
+              <img className={styles.sliderItem} src="/image.jpg" />
+            </div>
           </div>
         </div>
         {/* Portfolio */}
@@ -91,41 +108,28 @@ export default function Home() {
           <h2 className="sectionTitle">Portfolio</h2>
           <div className={styles.portfolioInner}>
             <div className={styles.portfolioCard}>
-              <img className={styles.portfolioImage} src="https://images.unsplash.com/photo-1625842268584-8f3296236761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
+              <img className={styles.portfolioImage} src="/together.png" />
               <div className={styles.portfolioContent}>
-                <h4 className={styles.portfolioTitle}>Together</h4>
-                <p className={styles.portfolioDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti illo earum reprehenderit voluptatem nulla quae voluptates, blanditiis cum? Quidem praesentium, dolores velit animi quod cumque dignissimos sed sapiente at eius.</p>
-              </div>
-            </div>
-
-            <div className={styles.portfolioCard}>
-              <img className={styles.portfolioImage} src="https://images.unsplash.com/photo-1625842268584-8f3296236761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
-              <div className={styles.portfolioContent}>
-                <h4 className={styles.portfolioTitle}>Together</h4>
-                <p className={styles.portfolioDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti illo earum reprehenderit voluptatem nulla quae voluptates, blanditiis cum? Quidem praesentium, dolores velit animi quod cumque dignissimos sed sapiente at eius.</p>
-              </div>
-            </div>
-
-            <div className={styles.portfolioCard}>
-              <img className={styles.portfolioImage} src="https://images.unsplash.com/photo-1625842268584-8f3296236761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
-              <div className={styles.portfolioContent}>
-                <h4 className={styles.portfolioTitle}>Together</h4>
-                <p className={styles.portfolioDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti illo earum reprehenderit voluptatem nulla quae voluptates, blanditiis cum? Quidem praesentium, dolores velit animi quod cumque dignissimos sed sapiente at eius.</p>
-              </div>
-            </div>
-
-            <div className={styles.portfolioCard}>
-              <img className={styles.portfolioImage} src="https://images.unsplash.com/photo-1625842268584-8f3296236761?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
-              <div className={styles.portfolioContent}>
-                <h4 className={styles.portfolioTitle}>Together</h4>
-                <p className={styles.portfolioDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti illo earum reprehenderit voluptatem nulla quae voluptates, blanditiis cum? Quidem praesentium, dolores velit animi quod cumque dignissimos sed sapiente at eius.</p>
+                <h4 className={styles.portfolioTitle}>
+                  <a href="https://narita-airi.com/" target="_blank">
+                    Together
+                  </a>
+                </h4>
+                <p className={styles.portfolioDescription}>
+                  <strong>技術ブログ＆学習イベント投稿サイト</strong>
+                  <br />
+                  <strong>
+                    &quot;If You Want To Go Far, Go Together&quot;
+                    (遠くへ行きたいならみんなで行け)
+                  </strong>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 const headTextAnimation = {
