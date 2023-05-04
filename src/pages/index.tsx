@@ -1,8 +1,9 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import { motion } from "framer-motion";
-import { FaTwitter, FaGithub } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaBook, FaRegSmileBeam } from "react-icons/fa";
 import { SiZenn } from "react-icons/si";
+import { GiHumanEar } from "react-icons/gi";
 
 import { Archivo_Black } from "next/font/google";
 
@@ -32,10 +33,15 @@ export default function Home() {
             <motion.div {...headContentAnimation}>
               <h2 className={styles.title}>~Nothing impossible!!!~</h2>
               <p className={styles.description}>
-              学習の中で、今まで継続していることとして<br/>自分の知識定着や、周りの学習者のためにも学んだことを<br/>
-              毎日アウトプットを行なっています。<br/>
-              <strong>&quot;アウトプットこそ最大の学び &quot;</strong><br/>
-               ぜひ以下のリンクからご覧ください！
+                学習の中で、今まで継続していることとして
+                <br />
+                自分の知識定着や、周りの学習者のためにも学んだことを
+                <br />
+                毎日アウトプットを行なっています。
+                <br />
+                <strong>&quot;アウトプットこそ最大の学び &quot;</strong>
+                <br />
+                ぜひ以下のリンクからご覧ください！
               </p>
             </motion.div>
             <motion.div {...headContentAnimation} className={styles.sns}>
@@ -72,6 +78,172 @@ export default function Home() {
             <div className={styles.selfImage}>
               <img className={styles.selfImage} src="/airi.jpg" />
             </div>
+          </motion.div>
+        </div>
+        {/* P */}
+        <div className={`section ${styles.personal}`}>
+          <h2 className="sectionTitle">Personal</h2>
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className={styles.personalInner}
+          >
+            <motion.div variants={item} className={styles.personalCard}>
+              <motion.div
+                whileHover={{ scale: 1.4 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.personalIcon}
+              >
+                <GiHumanEar size={"3rem"} />
+              </motion.div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Necessitatibus nobis voluptas dolorem, ut odit fuga sapiente
+                tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati?
+              </p>
+            </motion.div>
+            <motion.div variants={item} className={styles.personalCard}>
+              <motion.div
+                whileHover={{ scale: 1.4 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.personalIcon}
+              >
+                <FaBook size={"3rem"} />
+              </motion.div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Necessitatibus nobis voluptas dolorem, ut odit fuga sapiente
+                tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati?
+              </p>
+            </motion.div>
+            <motion.div variants={item} className={styles.personalCard}>
+              <motion.div
+                whileHover={{ scale: 1.4 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.personalIcon}
+              >
+                <FaRegSmileBeam size={"3rem"} />
+              </motion.div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Necessitatibus nobis voluptas dolorem, ut odit fuga sapiente
+                tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati?
+              </p>
+            </motion.div>
+          </motion.div>
+        </div>
+        {/* S */}
+        <div className={`section ${styles.skill}`}>
+          <h2 className="sectionTitle">Skill</h2>
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className={styles.skillInner}
+          >
+            <motion.div variants={item} className={styles.skillCard}>
+              <motion.div
+                whileHover={{ scale: 1.4 }}
+                whileTap={{ scale: 1 }}
+                className={styles.skillIcon}
+              >
+                <h4 className={`${archivoBlack.className} ${styles.skillCardTitle}`}>BACKEND</h4>
+              </motion.div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Necessitatibus nobis voluptas dolorem, ut odit fuga sapiente
+                tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati?
+              </p>
+            </motion.div>
+            <motion.div variants={item} className={styles.skillCard}>
+              <motion.div
+                whileHover={{ scale: 1.4 }}
+                whileTap={{ scale: 1 }}
+                className={styles.skillIcon}
+              >
+                 <h4 className={`${archivoBlack.className} ${styles.skillCardTitle}`}>FRONTEND</h4>
+              </motion.div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Necessitatibus nobis voluptas dolorem, ut odit fuga sapiente
+                tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati?
+              </p>
+            </motion.div>
+            <motion.div variants={item} className={styles.skillCard}>
+              <motion.div
+                whileHover={{ scale: 1.4 }}
+                whileTap={{ scale: 1 }}
+                className={styles.skillIcon}
+              >
+                 <h4 className={`${archivoBlack.className} ${styles.skillCardTitle}`}>INFRA</h4>
+              </motion.div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Necessitatibus nobis voluptas dolorem, ut odit fuga sapiente
+                tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati? Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Necessitatibus nobis voluptas dolorem, ut odit fuga
+                sapiente tenetur, corporis nam itaque laborum doloribus debitis
+                voluptatem nesciunt recusandae accusamus voluptates maxime?
+                Obcaecati?
+              </p>
+            </motion.div>
           </motion.div>
         </div>
         {/* Slider */}
@@ -168,4 +340,19 @@ const headImageAnimation = {
     restDelta: 0.001,
     duration: 0.3,
   },
+};
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.5,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
 };

@@ -59,6 +59,79 @@
 }
 
 /**
+** personal
+**/
+.personal {
+}
+
+.personalInner {
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+}
+.personalCard {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+}
+.personalIcon {
+  margin: 32px 0 24px 0;
+}
+.personalCard p {
+  overflow-y: scroll;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  -ms-overflow-style: none;
+}
+.personalCard p::-webkit-scrollbar {
+  display: none;
+}
+
+/**
+** skill
+**/
+.skill {
+}
+
+.skillInner {
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+}
+.skillCard {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+}
+.skillCardTitle {
+  margin: 32px 0 24px 0;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.skillCard p {
+  overflow-y: scroll;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  -ms-overflow-style: none;
+}
+.skillCard p::-webkit-scrollbar {
+  display: none;
+}
+
+
+/**
   * Slider
 **/
 .slider {
@@ -73,12 +146,12 @@
 }
 
 .sliderItem {
-  background-color: aqua;
   width: 320px;
-  height: 180px;
+  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
 }
 
 /**
