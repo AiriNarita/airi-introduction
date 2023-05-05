@@ -251,7 +251,10 @@ export default function Home() {
                   <strong>
                     &quot;If You Want To Go Far, Go Together&quot;
                     (遠くへ行きたいならみんなで行け)
-                  </strong>
+                  </strong><br />
+                  <br />
+                  ■ <a href="https://github.com/AiriNarita/together" target="_blank">Together -README</a>
+
                 </p>
               </div>
             </div>
