@@ -239,6 +239,7 @@ export default function Home() {
           <h2 className="sectionTitle">Portfolio</h2>
           <div className={styles.portfolioInner}>
             <div className={styles.portfolioCard}>
+
               <img className={styles.portfolioImage} src="/together.png" />
               <div className={styles.portfolioContent}>
                 <h4 className={styles.portfolioTitle}>
@@ -246,6 +247,16 @@ export default function Home() {
                     Together
                   </a>
                 </h4>
+                <br />
+                <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.snsItem}>
+                <a href="https://github.com/AiriNarita/airi-introduction" target="_blank">
+                  <FaGithub size={"1.6rem"}></FaGithub>
+                </a>
+                </motion.div>
+
                 <p className={styles.portfolioDescription}>
                   <strong>技術ブログ＆学習イベント投稿サイト</strong>
                   <br />
@@ -254,14 +265,12 @@ export default function Home() {
                     (遠くへ行きたいならみんなで行け)
                   </strong><br />
                   <br />
-                  ■ <a href="https://github.com/AiriNarita/together" target="_blank">Together -README</a>
-
                 </p>
               </div>
-            </div>
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 }
