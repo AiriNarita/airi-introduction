@@ -139,6 +139,7 @@ export default function Home() {
               </p>
             </motion.div>
           </motion.div>
+          <h3>■ Personality: <a href="https://www.16personalities.com/estp-personality" target="_blank" > ESTP</a></h3>
         </div>
         {/* S */}
         <div className={`section ${styles.skill}`}>
