@@ -296,7 +296,7 @@ export default function Home() {
           <h2 className="sectionTitle">Portfolio</h2>
           <div className={styles.portfolioInner}>
             <div className={styles.portfolioCard}>
-              <img className={styles.portfolioImage} src="/together.png" />
+              <img className={styles.portfolioImage} src="/together.gif" />
               <div className={styles.portfolioContent}>
                 <div className={styles.portfolioHeader}>
                   <h4 className={styles.portfolioTitle}>
