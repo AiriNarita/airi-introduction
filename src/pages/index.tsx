@@ -18,8 +18,6 @@ const archivoBlack = Archivo_Black({
   subsets: ["latin"],
 });
 
-
-
 export default function Home() {
   return (
     <>
