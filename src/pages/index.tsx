@@ -226,6 +226,8 @@ export default function Home() {
                 <br />
                 <strong>■ Next.js</strong> -学習中
                 <br />
+                <strong>■ Vue.js</strong> -学習中
+                <br />
                 <strong>■ HTML,CSS</strong>
                 <br />
                 <strong>■ Sass(Scss)</strong>
