@@ -7,6 +7,7 @@ import {
   FaBook,
   FaRegSmileBeam,
   FaHeart,
+  FaBlog,
 } from "react-icons/fa";
 import { SiZenn } from "react-icons/si";
 import { GiHumanEar } from "react-icons/gi";
@@ -78,6 +79,17 @@ export default function Home() {
                   <SiZenn size={"1.6rem"} />
                 </a>
               </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.snsItem}
+              >
+                <a href="https://airin.hatenablog.jp/archive" target="_blank">
+                  <FaBlog size={"1.6rem"} />
+                </a>
+              </motion.div>
+              
+              
             </motion.div>
           </div>
           <motion.div {...headImageAnimation}>
