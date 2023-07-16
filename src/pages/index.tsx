@@ -338,6 +338,7 @@ export default function Home() {
                     &quot;If You Want To Go Far, Go Together&quot;
                     (遠くへ行きたいならみんなで行け)
                   </strong>
+                  <p>※現在停止中...</p>
                   <br />
                   <br />
                 </p>
